@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.container {
+      background: rgba(20, 20, 20, 0.9);
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px #00f2ff;
+      width: 100%;
+      max-width: 380px;
+      text-align: center;
+      animation: glowBox 2s infinite alternate;
+}
+
+@keyframes glowBox {
+      from {
+            box-shadow: 0 0 15px #00f2ff;
+      }
+
+      to {
+            box-shadow: 0 0 30px #ff0080;
+      }
+}
+
+h2 {
+      margin-bottom: 20px;
+      color: #00f2ff;
+      text-shadow: 0 0 10px #00f2ff;
+      font-size: 26px;
+      letter-spacing: 2px;
+}
+
+.input-field {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: 2px solid #00f2ff;
+      border-radius: 8px;
+      font-size: 14px;
+      background: #111;
+      color: #fff;
+      outline: none;
+      transition: 0.3s;
+}
+
+.input-field:focus {
+      border-color: #ff0080;
+      box-shadow: 0 0 10px #ff0080;
+}
+
+.btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(90deg, #00f2ff, #ff0080);
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      transition: 0.3s;
+}
+
+.btn:hover {
+      box-shadow: 0 0 20px #00f2ff, 0 0 20px #ff0080;
+}
+
+p {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #bbb;
+}
+
+a {
+      color: #ff0080;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+}
+
+a:hover {
+      text-shadow: 0 0 8px #ff0080;
+}
+
+@media (max-width: 480px) {
+      .container {
+            padding: 30px 20px;
+            max-width: 100%;
+            border-radius: 10px;
+      }
+
+      h2 {
+            font-size: 22px;
+      }
+
+      .btn {
+            font-size: 15px;
+            padding: 12px;
+      }
+}

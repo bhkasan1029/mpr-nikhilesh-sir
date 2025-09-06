@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>user login page</title>
+      <link rel="stylesheet" type="text/css" href="/css/login.css">
+</head>
+
+<body>
+      <div class="container" id="form-container">
+            <div id="login-form">
+                  <h2>LOGIN</h2>
+                  <form>
+                        <input type="text" class="input-field" placeholder="Username" required>
+                        <input type="password" class="input-field" placeholder="Password" required>
+                        <button type="submit" class="btn">LOGIN</button>
+                  </form>
+                  <p>New USER? <br><a onclick="showSignup()">Sign Up</a></p>
+            </div>
+
+            <div id="signup-form" style="display:none;">
+                  <h2>SIGN UP</h2>
+                  <form>
+                        <input type="text" class="input-field" placeholder="Username" required>
+                        <input type="email" class="input-field" placeholder="Email" required>
+                        <input type="password" class="input-field" placeholder="Password" required>
+                        <input type="password" class="input-field" placeholder="Confirm Password" required>
+                        <button type="submit" class="btn">Create Account</button>
+                  </form>
+                  <p>Already a user? <br><a onclick="showLogin()">Login</a></p>
+            </div>
+      </div>
+
+      <script>
+            function showSignup() {
+                  document.getElementById("login-form").style.display = "none";
+                  document.getElementById("signup-form").style.display = "block";
+            }
+            function showLogin() {
+                  document.getElementById("signup-form").style.display = "none";
+                  document.getElementById("login-form").style.display = "block";
+            }
+      </script>
+</body>
+
+</html>

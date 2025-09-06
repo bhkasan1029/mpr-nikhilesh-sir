@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  line-height: 1.5;
+}
+
+header {
+  padding: 2rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff0057;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  min-height: 90vh;
+  padding: 0 5%;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-text h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.hero-text button {
+  background: #ff0057;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+.hero-text button:hover {
+  background: #ff336f;
+  transform: translateY(-3px);
+}
+
+.hero-img {
+  position: relative;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 20px;
+  transform: rotate(-2deg);
+  transition: transform 0.4s ease;
+}
+
+.hero-img img:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+.tagline {
+  position: absolute;
+  bottom: -20px;
+  right: -30px;
+  background: #ff0057;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 50px;
+  transform: rotate(5deg);
+}
+
+footer {
+  padding: 2rem 5%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    position: static;
+    transform: rotate(0deg);
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  .login-field {
+    display: block;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .login-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    background-color: #888;
+  }
+  .login-box  {
+    text-align: center;
+    border: 1px solid black;
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .login-box label{
+    display: block;
+    text-align: left;
+    margin-left: 7px;
+  }
+  .login-box h1 {
+    color: black;
+
+  }
+  .login-box label {
+    color: black;
+  }
+  
+  .login-box button {
+    background-color: rgb(173, 210, 243);
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+  }
+}
