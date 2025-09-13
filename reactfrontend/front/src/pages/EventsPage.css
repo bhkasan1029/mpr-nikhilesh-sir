@@ -1,0 +1,189 @@
+General Reset body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff0057;
+}
+
+
+.main-heading {
+    text-align: center;
+    margin: 2rem 0 1.5rem 0;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+
+    padding-bottom: 0.5rem;
+
+}
+
+.heading {
+    text-align: center;
+
+    margin: 2rem 0 1.5rem 0;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1000px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.car-event-card {
+    background-color: #111;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    flex-shrink: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.car-event-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.car-event-card h3 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin: 0.5rem 0 0.2rem 0;
+}
+
+.car-event-card p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.carousel-btn {
+    background-color: #ff0057;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: #ff00558e;
+}
+
+.carousel-btn.left {
+    margin-right: 1rem;
+}
+
+.carousel-btn.right {
+    margin-left: 1rem;
+}
+
+
+.events-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.all-events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.event-card.small {
+    background-color: #111;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card.small img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.event-card.small h3 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 0.3rem 0;
+}
+
+.event-card.small p {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.event-card.small:hover,
+.car-event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+
+@media (max-width: 900px) {
+    .all-events {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .all-events {
+        grid-template-columns: 1fr;
+    }
+
+    .car-event-card {
+        width: 90%;
+        height: auto;
+    }
+}
